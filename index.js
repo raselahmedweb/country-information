@@ -1,7 +1,7 @@
 const countries = document.querySelector(".countries");
 
-const country = fetch("https://raselwebdevv.github.io/country_info/country.json");
-
+function getCountryInfo() {
+  const country = fetch("https://raselwebdevv.github.io/country_info/country.json");
 country
   .then((data) => data.json())
   .then((myData) => {
@@ -26,3 +26,4 @@ country
   .catch((error) => {
     document.write(error);
   });
+}
