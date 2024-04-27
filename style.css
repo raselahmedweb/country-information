@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section#namHin {
+    background: #ddd;
+}
+.container {
+    width: 95%;
+    margin: auto;
+}
+.countries {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.country {
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 30px;
+    position: relative;
+}
+.counter{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: rgb(172 185 212);
+    font-size: 30px;
+    font-weight: bold;
+}
+.name span:first-child, .region span:first-child, .timezone span:first-child, .iso span:first-child, .phone span:first-child, .flag span:first-child {
+    font-weight: 700;
+}
+.flag span img {
+    width: 22px;
+}
