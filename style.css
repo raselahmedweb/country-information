@@ -1,4 +1,4 @@
-*{
+hu*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,4 +40,7 @@ section#namHin {
 }
 .flag span img {
     width: 22px;
+}
+.container h1{
+    text-align: center;
 }
