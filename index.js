@@ -3,6 +3,7 @@ const countries = document.querySelector(".countries");
 async function getCountryInfo() {
   const country = await fetch("https://raselwebdevv.github.io/country_info/country.json");
 const lastInfo = await country.json();
+  
     lastInfo.forEach((countrie, index) => {
       let counter = index + 1;
       if (counter < 10) {
@@ -20,7 +21,6 @@ const lastInfo = await country.json();
                     <div class="flag"><span>Image Flag: </span><span><img src=" ${lastInfo[index].image}" alt=""></span></div>
                 </div>`;
     });
-  })
-}
+};
 
 getCountryInfo();
