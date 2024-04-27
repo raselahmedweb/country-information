@@ -27,3 +27,5 @@ country
     document.write(error);
   });
 }
+
+getCountryInfo();
